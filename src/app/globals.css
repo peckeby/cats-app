@@ -22,10 +22,27 @@ body {
 
 @layer utilities {
     .text-balance {
-        text-wrap: balance;
+        text-wrap: normal;
     }
 }
 
 h1, h2 {
     font-family: var(--font-seymour);
+}
+
+.link-svg {
+    transition: stroke-dashoffset 1500ms 250ms;
+    stroke: rgba(16 97 50 / 1);
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    height: 20px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+}
+
+.nav-link:hover {
+    svg {
+        stroke-dashoffset: 0;
+    }
 }

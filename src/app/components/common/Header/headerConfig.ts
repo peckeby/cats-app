@@ -6,9 +6,9 @@ type headerItemType = {
 export const headerItems: headerItemType[] = [
   {
     id: 1,
-    name: "About",
-    link: "about",
+    name: "About project",
+    link: "/about-this-project",
   },
   { id: 2, name: "Something", link: "/" },
-  { id: 3, name: "Something_2", link: "/" },
+  { id: 3, name: "Something else", link: "/" },
 ];
