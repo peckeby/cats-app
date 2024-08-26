@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Comfortaa, Seymour_One } from "next/font/google";
 import Header from "@/app/components/common/Header/Header";
+import NavBlock from "@/app/components/navigation/NavBlock/NavBlock";
 
 const inter = Seymour_One({
   weight: "400",
@@ -30,8 +31,8 @@ export default function Home() {
             </h1>
             <Image
               className="aspect-square h-fit animate-spin-slow"
-              src="/flower_main.png"
-              alt="Animated orange flower"
+              src="/flower_main.avif"
+              alt="Animated painted orange flower that rotates"
               width={80}
               height={80}
             />
@@ -47,8 +48,8 @@ export default function Home() {
           </h2>
         </div>
         <Image
-          src="/cat_main.png"
-          alt="Next.js Logo"
+          src="/cat_main.avif"
+          alt="Gray kitten image with open mouth"
           width={500}
           height={500}
           priority
@@ -56,73 +57,21 @@ export default function Home() {
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-6xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="rounded-lg border border-transparent px-5 py-4 transition-colors group hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block motion-reduce:transform-none transition-transform group-hover:translate-x-1">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="rounded-lg border border-transparent px-5 py-4 transition-colors group hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block motion-reduce:transform-none transition-transform group-hover:translate-x-1">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="rounded-lg border border-transparent px-5 py-4 transition-colors group hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block motion-reduce:transform-none transition-transform group-hover:translate-x-1">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="rounded-lg border border-transparent px-5 py-4 transition-colors group hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block motion-reduce:transform-none transition-transform group-hover:translate-x-1">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            iii{" "}
-          </p>
-        </a>
+        <NavBlock
+          heading="About us"
+          description="Find out more about this projects and why we cool!"
+          href="/about-this-project"
+        />
+        <NavBlock
+          heading="Species"
+          description="Investigate unique cats species and its pecularities"
+          href="/species"
+        />
+        <NavBlock
+          heading="Species"
+          description="Investigate unique cats species and its pecularities"
+          href="/species"
+        />
       </div>
     </main>
   );
