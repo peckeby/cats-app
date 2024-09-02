@@ -1,32 +1,17 @@
 import Image from "next/image";
-import { Comfortaa, Seymour_One } from "next/font/google";
 import Header from "@/app/components/common/Header/Header";
 import NavBlock from "@/app/components/navigation/NavBlock/NavBlock";
-
-const inter = Seymour_One({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-seymour",
-});
-
-const comfortaa = Comfortaa({
-  weight: ["300", "400", "500"],
-  subsets: ["latin"],
-  variable: "--font-comfortaa",
-});
 
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-12 ${comfortaa.variable} font-comfortaa bg-main_bkc`}
+      className={`flex min-h-screen flex-col items-center justify-between p-12 font-comfortaa bg-main_bkc`}
     >
       <Header />
       <div className="relative flex flex-row w-full h-inherit lg:max-w-6xl justify-between items-center ">
         <div className="h-full flex flex-col gap-8">
           <div className="flex flex-row items-center">
-            <h1
-              className={`${inter.variable} text-dark-green text-7xl px-5 py-4`}
-            >
+            <h1 className={`font-seymour text-dark-green text-7xl px-5 py-4`}>
               Cats
             </h1>
             <Image
@@ -38,7 +23,7 @@ export default function Home() {
             />
           </div>
           <h2
-            className={`${inter.variable} text-dark-green text-5xl px-5 py-4 leading-tight`}
+            className={`font-seymour text-dark-green text-5xl px-5 py-4 leading-tight`}
           >
             And all you
             <br />
